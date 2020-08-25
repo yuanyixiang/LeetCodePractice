@@ -1,11 +1,14 @@
 package link;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author rd-yyx
  * @version 1.0
  * @date 2020/8/24 9:28 下午
  */
 public class Solution2 {
+    //title:https://leetcode.com/problems/swap-nodes-in-pairs
     class ListNode {
         int val;
         ListNode next;
@@ -26,6 +29,7 @@ public class Solution2 {
             last = prev;
             prev = prev.next;
         }
+        ReentrantLock reentrantLock = new ReentrantLock();
         return head;
     }
 }
