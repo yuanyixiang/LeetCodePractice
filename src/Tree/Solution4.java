@@ -10,6 +10,7 @@ import java.util.List;
  * @date 2020/8/30 11:48 上午
  */
 public class Solution4 {
+    //title:https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/
     class Node {
         public int val;
         public List<Node> children;

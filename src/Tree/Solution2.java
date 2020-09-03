@@ -1,8 +1,6 @@
 package Tree;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -39,14 +37,4 @@ public class Solution2 {
         }
     }
 
-    public static void main(String[] args) {
-        LinkedList<Integer> output = new LinkedList<>();
-
-        output.addFirst(1);
-        output.addFirst(2);
-
-        System.out.println(output.pollLast());
-        System.out.println(output.pollLast());
-
-    }
 }

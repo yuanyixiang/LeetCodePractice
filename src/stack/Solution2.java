@@ -17,6 +17,7 @@ public class Solution2 {
     }
 
     public void push(int x) {
+
         stack.push(x);
         if(minStack.isEmpty() || x <= minStack.peek()){
             minStack.push(x);

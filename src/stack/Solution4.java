@@ -2,6 +2,8 @@ package stack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author rd-yyx
@@ -30,4 +32,14 @@ public class Solution4 {
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        Map<Character,Integer> map = new HashMap<>();
+
+        map.put('a',1);
+        map.put('a',2);
+        char[] a;
+        System.out.println(map.get('a'));
+    }
+
 }

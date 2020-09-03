@@ -14,6 +14,7 @@ public class Solution1 {
             return false;
         }
         Stack<Character> charStack = new Stack<Character>();
+
         char[] chars = s.toCharArray();
         int j = chars.length;
         for(int i = 0 ; i < j; i++){
@@ -24,7 +25,9 @@ public class Solution1 {
             else if(charStack.isEmpty() || chars[i] != charStack.pop()){
                 return false;
             }
+
         }
         return charStack.isEmpty();
     }
+
 }

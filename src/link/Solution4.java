@@ -1,5 +1,7 @@
 package link;
 
+import java.util.concurrent.CountDownLatch;
+
 /**
  * @author rd-yyx
  * @version 1.0
@@ -16,6 +18,8 @@ public class Solution4 {
        }
    }
     public ListNode findTogether(ListNode head){
+        CountDownLatch countDownLatch = new CountDownLatch(1);
+        countDownLatch.countDown();
         ListNode slow = head.next;
         ListNode fast = head.next.next;
         while(fast != null && fast.next != null){
